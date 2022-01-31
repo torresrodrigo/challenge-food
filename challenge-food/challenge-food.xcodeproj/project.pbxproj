@@ -20,6 +20,8 @@
 		88366E1D27A8A2CE004EE22C /* ListFoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88366E1B27A8A2CE004EE22C /* ListFoodVC.swift */; };
 		88366E1E27A8A2CE004EE22C /* ListFoodVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88366E1C27A8A2CE004EE22C /* ListFoodVC.xib */; };
 		88366E2227A8A346004EE22C /* ListFoodRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88366E2127A8A346004EE22C /* ListFoodRouter.swift */; };
+		88366E2627A8A6DB004EE22C /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88366E2427A8A6DB004EE22C /* FoodCell.swift */; };
+		88366E2727A8A6DB004EE22C /* FoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88366E2527A8A6DB004EE22C /* FoodCell.xib */; };
 		888950258CC40286D5D2AF5E /* Pods_challenge_food_challenge_foodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE0B0AAFD67FC0AA10DD91B /* Pods_challenge_food_challenge_foodUITests.framework */; };
 		A407FC6A970C17FDBC8C736A /* Pods_challenge_foodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346116197FC9B4383B7B2A61 /* Pods_challenge_foodTests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,8 @@
 		88366E1B27A8A2CE004EE22C /* ListFoodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFoodVC.swift; sourceTree = "<group>"; };
 		88366E1C27A8A2CE004EE22C /* ListFoodVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListFoodVC.xib; sourceTree = "<group>"; };
 		88366E2127A8A346004EE22C /* ListFoodRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFoodRouter.swift; sourceTree = "<group>"; };
+		88366E2427A8A6DB004EE22C /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		88366E2527A8A6DB004EE22C /* FoodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCell.xib; sourceTree = "<group>"; };
 		92188A024A135C9DE2B05EFE /* Pods-challenge-food.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-food.release.xcconfig"; path = "Target Support Files/Pods-challenge-food/Pods-challenge-food.release.xcconfig"; sourceTree = "<group>"; };
 		AD3D9BE48B964F4E01F5D09E /* Pods-challenge-foodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-foodTests.debug.xcconfig"; path = "Target Support Files/Pods-challenge-foodTests/Pods-challenge-foodTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B7B69FAFDF877D451B30ED77 /* Pods-challenge-foodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-foodTests.release.xcconfig"; path = "Target Support Files/Pods-challenge-foodTests/Pods-challenge-foodTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,7 +169,7 @@
 				88366E2027A8A2DF004EE22C /* ViewModel */,
 				88366E1F27A8A2D4004EE22C /* View */,
 				88366E1A27A8A132004EE22C /* Controller */,
-				88366E2127A8A346004EE22C /* ListFoodRouter.swift */,
+				88366E2327A8A59C004EE22C /* Router */,
 			);
 			path = ListFood;
 			sourceTree = "<group>";
@@ -181,6 +185,7 @@
 		88366E1F27A8A2D4004EE22C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				88366E2827A8A6E4004EE22C /* FoodCell */,
 				88366E1C27A8A2CE004EE22C /* ListFoodVC.xib */,
 			);
 			path = View;
@@ -191,6 +196,23 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		88366E2327A8A59C004EE22C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				88366E2127A8A346004EE22C /* ListFoodRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		88366E2827A8A6E4004EE22C /* FoodCell */ = {
+			isa = PBXGroup;
+			children = (
+				88366E2427A8A6DB004EE22C /* FoodCell.swift */,
+				88366E2527A8A6DB004EE22C /* FoodCell.xib */,
+			);
+			path = FoodCell;
 			sourceTree = "<group>";
 		};
 		C0C92AF28F61C38B755576AC /* Frameworks */ = {
@@ -327,6 +349,7 @@
 			files = (
 				88366E1E27A8A2CE004EE22C /* ListFoodVC.xib in Resources */,
 				88366DF327A89BD2004EE22C /* LaunchScreen.storyboard in Resources */,
+				88366E2727A8A6DB004EE22C /* FoodCell.xib in Resources */,
 				88366DF027A89BD2004EE22C /* Assets.xcassets in Resources */,
 				88366DEE27A89BCC004EE22C /* Main.storyboard in Resources */,
 			);
@@ -457,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88366E1D27A8A2CE004EE22C /* ListFoodVC.swift in Sources */,
+				88366E2627A8A6DB004EE22C /* FoodCell.swift in Sources */,
 				88366DEB27A89BCC004EE22C /* ViewController.swift in Sources */,
 				88366E2227A8A346004EE22C /* ListFoodRouter.swift in Sources */,
 				88366DE727A89BCC004EE22C /* AppDelegate.swift in Sources */,

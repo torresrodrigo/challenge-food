@@ -9,21 +9,35 @@ import UIKit
 
 class ListFoodVC: UIViewController {
 
+    private var router = ListFoodRouter()
+    
+    @IBOutlet weak var listFoodTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupTableView()
+        
     }
 
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension ListFoodVC: UITableViewDelegate, UITableViewDataSource {
+    
+    func setupTableView() {
+        listFoodTableView.register(FoodCell.nib(), forCellReuseIdentifier: FoodCell.identifier)
+        listFoodTableView.delegate = self
+        listFoodTableView.dataSource = self
     }
-    */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = listFoodTableView.dequeueReusableCell(withIdentifier: FoodCell.identifier, for: indexPath) as! FoodCell
+        return cell
+    }
+    
+    
+    
 
 }
