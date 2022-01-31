@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88366DE727A89BCC004EE22C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88366DE627A89BCC004EE22C /* AppDelegate.swift */; };
+		88366DE927A89BCC004EE22C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88366DE827A89BCC004EE22C /* SceneDelegate.swift */; };
+		88366DEB27A89BCC004EE22C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88366DEA27A89BCC004EE22C /* ViewController.swift */; };
+		88366DEE27A89BCC004EE22C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88366DEC27A89BCC004EE22C /* Main.storyboard */; };
+		88366DF027A89BD2004EE22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88366DEF27A89BD2004EE22C /* Assets.xcassets */; };
+		88366DF327A89BD2004EE22C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88366DF127A89BD2004EE22C /* LaunchScreen.storyboard */; };
+		88366DFE27A89BD3004EE22C /* challenge_foodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88366DFD27A89BD3004EE22C /* challenge_foodTests.swift */; };
+		88366E0827A89BD3004EE22C /* challenge_foodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88366E0727A89BD3004EE22C /* challenge_foodUITests.swift */; };
+		88366E0A27A89BD3004EE22C /* challenge_foodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88366E0927A89BD3004EE22C /* challenge_foodUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88366DFA27A89BD3004EE22C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88366DDB27A89BCC004EE22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88366DE227A89BCC004EE22C;
+			remoteInfo = "challenge-food";
+		};
+		88366E0427A89BD3004EE22C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88366DDB27A89BCC004EE22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88366DE227A89BCC004EE22C;
+			remoteInfo = "challenge-food";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88366DE327A89BCC004EE22C /* challenge-food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "challenge-food.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88366DE627A89BCC004EE22C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88366DE827A89BCC004EE22C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		88366DEA27A89BCC004EE22C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88366DED27A89BCC004EE22C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88366DEF27A89BD2004EE22C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88366DF227A89BD2004EE22C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88366DF427A89BD2004EE22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88366DF927A89BD3004EE22C /* challenge-foodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "challenge-foodTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88366DFD27A89BD3004EE22C /* challenge_foodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = challenge_foodTests.swift; sourceTree = "<group>"; };
+		88366E0327A89BD3004EE22C /* challenge-foodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "challenge-foodUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88366E0727A89BD3004EE22C /* challenge_foodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = challenge_foodUITests.swift; sourceTree = "<group>"; };
+		88366E0927A89BD3004EE22C /* challenge_foodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = challenge_foodUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88366DE027A89BCC004EE22C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88366DF627A89BD3004EE22C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88366E0027A89BD3004EE22C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88366DDA27A89BCC004EE22C = {
+			isa = PBXGroup;
+			children = (
+				88366DE527A89BCC004EE22C /* challenge-food */,
+				88366DFC27A89BD3004EE22C /* challenge-foodTests */,
+				88366E0627A89BD3004EE22C /* challenge-foodUITests */,
+				88366DE427A89BCC004EE22C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88366DE427A89BCC004EE22C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88366DE327A89BCC004EE22C /* challenge-food.app */,
+				88366DF927A89BD3004EE22C /* challenge-foodTests.xctest */,
+				88366E0327A89BD3004EE22C /* challenge-foodUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88366DE527A89BCC004EE22C /* challenge-food */ = {
+			isa = PBXGroup;
+			children = (
+				88366DE627A89BCC004EE22C /* AppDelegate.swift */,
+				88366DE827A89BCC004EE22C /* SceneDelegate.swift */,
+				88366DEA27A89BCC004EE22C /* ViewController.swift */,
+				88366DEC27A89BCC004EE22C /* Main.storyboard */,
+				88366DEF27A89BD2004EE22C /* Assets.xcassets */,
+				88366DF127A89BD2004EE22C /* LaunchScreen.storyboard */,
+				88366DF427A89BD2004EE22C /* Info.plist */,
+			);
+			path = "challenge-food";
+			sourceTree = "<group>";
+		};
+		88366DFC27A89BD3004EE22C /* challenge-foodTests */ = {
+			isa = PBXGroup;
+			children = (
+				88366DFD27A89BD3004EE22C /* challenge_foodTests.swift */,
+			);
+			path = "challenge-foodTests";
+			sourceTree = "<group>";
+		};
+		88366E0627A89BD3004EE22C /* challenge-foodUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88366E0727A89BD3004EE22C /* challenge_foodUITests.swift */,
+				88366E0927A89BD3004EE22C /* challenge_foodUITestsLaunchTests.swift */,
+			);
+			path = "challenge-foodUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88366DE227A89BCC004EE22C /* challenge-food */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88366E0D27A89BD3004EE22C /* Build configuration list for PBXNativeTarget "challenge-food" */;
+			buildPhases = (
+				88366DDF27A89BCC004EE22C /* Sources */,
+				88366DE027A89BCC004EE22C /* Frameworks */,
+				88366DE127A89BCC004EE22C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "challenge-food";
+			productName = "challenge-food";
+			productReference = 88366DE327A89BCC004EE22C /* challenge-food.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88366DF827A89BD3004EE22C /* challenge-foodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88366E1027A89BD3004EE22C /* Build configuration list for PBXNativeTarget "challenge-foodTests" */;
+			buildPhases = (
+				88366DF527A89BD3004EE22C /* Sources */,
+				88366DF627A89BD3004EE22C /* Frameworks */,
+				88366DF727A89BD3004EE22C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88366DFB27A89BD3004EE22C /* PBXTargetDependency */,
+			);
+			name = "challenge-foodTests";
+			productName = "challenge-foodTests";
+			productReference = 88366DF927A89BD3004EE22C /* challenge-foodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88366E0227A89BD3004EE22C /* challenge-foodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88366E1327A89BD3004EE22C /* Build configuration list for PBXNativeTarget "challenge-foodUITests" */;
+			buildPhases = (
+				88366DFF27A89BD3004EE22C /* Sources */,
+				88366E0027A89BD3004EE22C /* Frameworks */,
+				88366E0127A89BD3004EE22C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88366E0527A89BD3004EE22C /* PBXTargetDependency */,
+			);
+			name = "challenge-foodUITests";
+			productName = "challenge-foodUITests";
+			productReference = 88366E0327A89BD3004EE22C /* challenge-foodUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88366DDB27A89BCC004EE22C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					88366DE227A89BCC004EE22C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					88366DF827A89BD3004EE22C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 88366DE227A89BCC004EE22C;
+					};
+					88366E0227A89BD3004EE22C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 88366DE227A89BCC004EE22C;
+					};
+				};
+			};
+			buildConfigurationList = 88366DDE27A89BCC004EE22C /* Build configuration list for PBXProject "challenge-food" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88366DDA27A89BCC004EE22C;
+			productRefGroup = 88366DE427A89BCC004EE22C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88366DE227A89BCC004EE22C /* challenge-food */,
+				88366DF827A89BD3004EE22C /* challenge-foodTests */,
+				88366E0227A89BD3004EE22C /* challenge-foodUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88366DE127A89BCC004EE22C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88366DF327A89BD2004EE22C /* LaunchScreen.storyboard in Resources */,
+				88366DF027A89BD2004EE22C /* Assets.xcassets in Resources */,
+				88366DEE27A89BCC004EE22C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88366DF727A89BD3004EE22C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88366E0127A89BD3004EE22C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88366DDF27A89BCC004EE22C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88366DEB27A89BCC004EE22C /* ViewController.swift in Sources */,
+				88366DE727A89BCC004EE22C /* AppDelegate.swift in Sources */,
+				88366DE927A89BCC004EE22C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88366DF527A89BD3004EE22C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88366DFE27A89BD3004EE22C /* challenge_foodTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88366DFF27A89BD3004EE22C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88366E0A27A89BD3004EE22C /* challenge_foodUITestsLaunchTests.swift in Sources */,
+				88366E0827A89BD3004EE22C /* challenge_foodUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88366DFB27A89BD3004EE22C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88366DE227A89BCC004EE22C /* challenge-food */;
+			targetProxy = 88366DFA27A89BD3004EE22C /* PBXContainerItemProxy */;
+		};
+		88366E0527A89BD3004EE22C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88366DE227A89BCC004EE22C /* challenge-food */;
+			targetProxy = 88366E0427A89BD3004EE22C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88366DEC27A89BCC004EE22C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88366DED27A89BCC004EE22C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88366DF127A89BD2004EE22C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88366DF227A89BD2004EE22C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88366E0B27A89BD3004EE22C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88366E0C27A89BD3004EE22C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88366E0E27A89BD3004EE22C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MMDTV8J5UC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "challenge-food/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigotorres.challenge-food";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88366E0F27A89BD3004EE22C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MMDTV8J5UC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "challenge-food/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigotorres.challenge-food";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		88366E1127A89BD3004EE22C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MMDTV8J5UC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigotorres.challenge-foodTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/challenge-food.app/challenge-food";
+			};
+			name = Debug;
+		};
+		88366E1227A89BD3004EE22C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MMDTV8J5UC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigotorres.challenge-foodTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/challenge-food.app/challenge-food";
+			};
+			name = Release;
+		};
+		88366E1427A89BD3004EE22C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MMDTV8J5UC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigotorres.challenge-foodUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "challenge-food";
+			};
+			name = Debug;
+		};
+		88366E1527A89BD3004EE22C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MMDTV8J5UC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigotorres.challenge-foodUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "challenge-food";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88366DDE27A89BCC004EE22C /* Build configuration list for PBXProject "challenge-food" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88366E0B27A89BD3004EE22C /* Debug */,
+				88366E0C27A89BD3004EE22C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88366E0D27A89BD3004EE22C /* Build configuration list for PBXNativeTarget "challenge-food" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88366E0E27A89BD3004EE22C /* Debug */,
+				88366E0F27A89BD3004EE22C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88366E1027A89BD3004EE22C /* Build configuration list for PBXNativeTarget "challenge-foodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88366E1127A89BD3004EE22C /* Debug */,
+				88366E1227A89BD3004EE22C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88366E1327A89BD3004EE22C /* Build configuration list for PBXNativeTarget "challenge-foodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88366E1427A89BD3004EE22C /* Debug */,
+				88366E1527A89BD3004EE22C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88366DDB27A89BCC004EE22C /* Project object */;
+}
