@@ -22,6 +22,7 @@
 		88366E2227A8A346004EE22C /* ListFoodRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88366E2127A8A346004EE22C /* ListFoodRouter.swift */; };
 		88366E2627A8A6DB004EE22C /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88366E2427A8A6DB004EE22C /* FoodCell.swift */; };
 		88366E2727A8A6DB004EE22C /* FoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88366E2527A8A6DB004EE22C /* FoodCell.xib */; };
+		88366E2A27A8AA25004EE22C /* ListFoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88366E2927A8AA25004EE22C /* ListFoodViewModel.swift */; };
 		888950258CC40286D5D2AF5E /* Pods_challenge_food_challenge_foodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE0B0AAFD67FC0AA10DD91B /* Pods_challenge_food_challenge_foodUITests.framework */; };
 		A407FC6A970C17FDBC8C736A /* Pods_challenge_foodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346116197FC9B4383B7B2A61 /* Pods_challenge_foodTests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		88366E2127A8A346004EE22C /* ListFoodRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFoodRouter.swift; sourceTree = "<group>"; };
 		88366E2427A8A6DB004EE22C /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		88366E2527A8A6DB004EE22C /* FoodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCell.xib; sourceTree = "<group>"; };
+		88366E2927A8AA25004EE22C /* ListFoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFoodViewModel.swift; sourceTree = "<group>"; };
 		92188A024A135C9DE2B05EFE /* Pods-challenge-food.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-food.release.xcconfig"; path = "Target Support Files/Pods-challenge-food/Pods-challenge-food.release.xcconfig"; sourceTree = "<group>"; };
 		AD3D9BE48B964F4E01F5D09E /* Pods-challenge-foodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-foodTests.debug.xcconfig"; path = "Target Support Files/Pods-challenge-foodTests/Pods-challenge-foodTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B7B69FAFDF877D451B30ED77 /* Pods-challenge-foodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-foodTests.release.xcconfig"; path = "Target Support Files/Pods-challenge-foodTests/Pods-challenge-foodTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 		88366E2027A8A2DF004EE22C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				88366E2927A8AA25004EE22C /* ListFoodViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 			files = (
 				88366E1D27A8A2CE004EE22C /* ListFoodVC.swift in Sources */,
 				88366E2627A8A6DB004EE22C /* FoodCell.swift in Sources */,
+				88366E2A27A8AA25004EE22C /* ListFoodViewModel.swift in Sources */,
 				88366DEB27A89BCC004EE22C /* ViewController.swift in Sources */,
 				88366E2227A8A346004EE22C /* ListFoodRouter.swift in Sources */,
 				88366DE727A89BCC004EE22C /* AppDelegate.swift in Sources */,
