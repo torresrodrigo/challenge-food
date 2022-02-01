@@ -10,12 +10,13 @@ import UIKit
 class ListFoodVC: UIViewController {
 
     private var router = ListFoodRouter()
+    private var viewModel = ListFoodViewModel()
     
     @IBOutlet weak var listFoodTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.bind(view: self, router: router)
         setupTableView()
-        
     }
 
 }
