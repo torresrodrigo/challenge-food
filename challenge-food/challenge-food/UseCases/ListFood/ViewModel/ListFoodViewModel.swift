@@ -6,15 +6,26 @@
 //
 
 import Foundation
+import RxSwift
+
 
 class ListFoodViewModel {
     
     private weak var view: ListFoodVC?
     private var router: ListFoodRouter?
-    
+    private var apiManager = APIManager()
+
+    private var foods = [Foods]()
+    private var disposeBag = DisposeBag()
+        
     func bind(view: ListFoodVC, router: ListFoodRouter) {
         self.view = view
         self.router = router
         self.router?.setSourceView(view)
+    }
+    
+    func getListFoods(search: String) -> Observable<[Food]> {
+        return apiManager.getListFood(search: search)
+ 
     }
 }
