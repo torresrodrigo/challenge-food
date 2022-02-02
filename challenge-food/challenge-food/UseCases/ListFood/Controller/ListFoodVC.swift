@@ -20,7 +20,7 @@ class ListFoodVC: UIViewController {
         super.viewDidLoad()
         viewModel.bind(view: self, router: router)
         setupTableView()
-        getListFoods(search: "Lasagne")
+        getListFoods(search: "Bur")
         
     }
     
@@ -30,12 +30,19 @@ class ListFoodVC: UIViewController {
             .observe(on: MainScheduler.instance)
             .subscribe { foods in
                 self.foods = foods
+                self.reloadTableView()
                 print(self.foods)
             } onError: { error in
                 print(error.localizedDescription)
             }.disposed(by: disposeBag)
     }
     
+    
+    private func reloadTableView() {
+        DispatchQueue.main.async {
+            self.listFoodTableView.reloadData()
+        }
+    }
     
 
 }
@@ -49,11 +56,12 @@ extension ListFoodVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return foods.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = listFoodTableView.dequeueReusableCell(withIdentifier: FoodCell.identifier, for: indexPath) as! FoodCell
+        cell.setupCell(food: foods[indexPath.row])
         return cell
     }
     

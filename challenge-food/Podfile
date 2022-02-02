@@ -9,6 +9,7 @@ target 'challenge-food' do
 pod 'Alamofire', '~> 5.5'
     pod 'RxSwift', '6.5.0'
     pod 'RxCocoa', '6.5.0'
+    pod 'SDWebImage', '~> 5.0'
 
   target 'challenge-foodTests' do
     inherit! :search_paths
