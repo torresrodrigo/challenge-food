@@ -9,10 +9,10 @@ import Foundation
 
 struct Foods: Codable {
 
-    let listOfFoods: [Foods]
+    let meals: [Food]
     
     enum CodingKeys: String, CodingKey {
-        case listOfFoods = "meals"
+        case meals
     }
     
 }

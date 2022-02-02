@@ -9,16 +9,16 @@ import Foundation
 
 struct Food: Codable {
     
-    let id: String
-    let nameMeal: String
-    let categoryMeal: String
-    let imageMeal: String
+    //let id: String
+    let strMeal: String
+    let strCategory: String
+    let strMealThumb: String
     
     enum CodingKeys: String, CodingKey {
-        case id = "idMeal"
-        case nameMeal = "strMeal"
-        case categoryMeal = "strCategory"
-        case imageMeal = "strMealThumb"
+        //case id = "idMeal"
+        case strMeal
+        case strCategory
+        case strMealThumb
     }
     
     
