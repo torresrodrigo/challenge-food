@@ -11,6 +11,7 @@
 		8826AE2527AA11D800215304 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826AE2427AA11D800215304 /* APIManager.swift */; };
 		8826AE2827AA125600215304 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826AE2727AA125600215304 /* Food.swift */; };
 		8826AE2A27AA16CB00215304 /* Foods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826AE2927AA16CB00215304 /* Foods.swift */; };
+		8826AE2D27AA253800215304 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826AE2C27AA253800215304 /* Constants.swift */; };
 		88366DE727A89BCC004EE22C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88366DE627A89BCC004EE22C /* AppDelegate.swift */; };
 		88366DE927A89BCC004EE22C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88366DE827A89BCC004EE22C /* SceneDelegate.swift */; };
 		88366DEB27A89BCC004EE22C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88366DEA27A89BCC004EE22C /* ViewController.swift */; };
@@ -55,6 +56,7 @@
 		8826AE2427AA11D800215304 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		8826AE2727AA125600215304 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		8826AE2927AA16CB00215304 /* Foods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foods.swift; sourceTree = "<group>"; };
+		8826AE2C27AA253800215304 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		88366DE327A89BCC004EE22C /* challenge-food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "challenge-food.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88366DE627A89BCC004EE22C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88366DE827A89BCC004EE22C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		8826AE2B27AA24F000215304 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8826AE2C27AA253800215304 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		88366DDA27A89BCC004EE22C = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +161,7 @@
 		88366DE527A89BCC004EE22C /* challenge-food */ = {
 			isa = PBXGroup;
 			children = (
+				8826AE2B27AA24F000215304 /* Helpers */,
 				8826AE2327AA102400215304 /* Network */,
 				88366E1627A89FF6004EE22C /* UseCases */,
 				88366DE627A89BCC004EE22C /* AppDelegate.swift */,
@@ -508,6 +519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88366E1D27A8A2CE004EE22C /* ListFoodVC.swift in Sources */,
+				8826AE2D27AA253800215304 /* Constants.swift in Sources */,
 				8826AE2527AA11D800215304 /* APIManager.swift in Sources */,
 				88366E2627A8A6DB004EE22C /* FoodCell.swift in Sources */,
 				88366E2A27A8AA25004EE22C /* ListFoodViewModel.swift in Sources */,
