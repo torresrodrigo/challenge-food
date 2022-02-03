@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewVC" customModule="challenge_food" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionLabel" destination="qmz-P1-Agk" id="Zss-Lb-1Im"/>
+                <outlet property="ingredientsTableView" destination="ona-Uw-xaY" id="ail-BZ-Nnw"/>
+                <outlet property="titleLabel" destination="tOk-cO-OKD" id="Fdn-YS-O0v"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
