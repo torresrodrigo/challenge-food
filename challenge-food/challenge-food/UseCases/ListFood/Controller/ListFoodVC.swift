@@ -25,7 +25,7 @@ class ListFoodVC: UIViewController {
     }
     
     func getListFoods(search: String) {
-        viewModel.getListFoods(search: search)
+        viewModel.getListFoods(search: search.remplaceTextInQuery())
             .subscribe(on: MainScheduler.instance)
             .observe(on: MainScheduler.instance)
             .subscribe { foods in
