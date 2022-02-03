@@ -70,6 +70,10 @@ extension ListFoodVC: UITableViewDelegate, UITableViewDataSource {
         cell.setupCell(food: foods[indexPath.row])
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.makeDetailView()
+    }
 
 }
 
