@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListFoodVC" customModule="challenge_food" customModuleProvider="target">
             <connections>
                 <outlet property="listFoodTableView" destination="PAU-pk-dYb" id="nKs-mp-Mks"/>
+                <outlet property="searchBar" destination="rz6-lJ-XZ9" id="Bb2-lJ-Jdx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,20 +20,52 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="rz6-lJ-XZ9">
+                    <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PAU-pk-dYb">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="95" width="414" height="709.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkC-YO-jTn">
+                    <rect key="frame" x="0.0" y="804.5" width="414" height="57.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IQe-50-WHJ">
+                            <rect key="frame" x="0.0" y="0.0" width="57.5" height="57.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="IQe-50-WHJ" secondAttribute="height" multiplier="1:1" id="qKH-cZ-Fn6"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q47-wK-ewj">
+                            <rect key="frame" x="57.5" y="0.0" width="356.5" height="57.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="IQe-50-WHJ" firstAttribute="height" secondItem="dkC-YO-jTn" secondAttribute="height" id="NgE-xN-xh6"/>
+                        <constraint firstItem="q47-wK-ewj" firstAttribute="height" secondItem="dkC-YO-jTn" secondAttribute="height" id="he0-3g-2UJ"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="PAU-pk-dYb" secondAttribute="bottom" id="617-bO-gxh"/>
-                <constraint firstItem="PAU-pk-dYb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MDr-Hi-yYJ"/>
-                <constraint firstItem="PAU-pk-dYb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ngi-eC-POQ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PAU-pk-dYb" secondAttribute="trailing" id="tjB-ad-KcZ"/>
+                <constraint firstItem="dkC-YO-jTn" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.07" id="HhC-LZ-83c"/>
+                <constraint firstItem="PAU-pk-dYb" firstAttribute="top" secondItem="rz6-lJ-XZ9" secondAttribute="bottom" id="IFs-Ul-9hO"/>
+                <constraint firstItem="dkC-YO-jTn" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="KKu-Qy-BmM"/>
+                <constraint firstItem="dkC-YO-jTn" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="SHb-RE-z0Z"/>
+                <constraint firstItem="dkC-YO-jTn" firstAttribute="top" secondItem="PAU-pk-dYb" secondAttribute="bottom" id="VsW-4F-lbn"/>
+                <constraint firstItem="rz6-lJ-XZ9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Xt3-XW-3eU"/>
+                <constraint firstItem="PAU-pk-dYb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ds9-eD-SlM"/>
+                <constraint firstItem="rz6-lJ-XZ9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="duv-75-VX9"/>
+                <constraint firstItem="PAU-pk-dYb" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="sao-eZ-M9L"/>
+                <constraint firstItem="dkC-YO-jTn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wU9-iP-ILQ"/>
+                <constraint firstItem="rz6-lJ-XZ9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="z8t-hX-eUP"/>
             </constraints>
-            <point key="canvasLocation" x="133" y="97"/>
+            <point key="canvasLocation" x="131.8840579710145" y="96.428571428571431"/>
         </view>
     </objects>
     <resources>

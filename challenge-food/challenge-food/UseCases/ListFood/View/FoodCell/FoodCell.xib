@@ -9,15 +9,57 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" restorationIdentifier="FoodCell" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FoodCell" customModule="challenge_food" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="FoodCell" selectionStyle="default" indentationWidth="10" rowHeight="115" id="KGk-i7-Jjw" customClass="FoodCell" customModule="challenge_food" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="115"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <rect key="frame" x="0.0" y="0.0" width="360" height="115"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ROq-OI-jt6">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="115"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fDH-wD-Mmc">
+                                <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fDH-wD-Mmc" secondAttribute="height" multiplier="1:1" id="ReP-er-PZM"/>
+                                    <constraint firstAttribute="height" constant="90" id="sWy-PP-6FB"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QM7-7f-T10">
+                                <rect key="frame" x="145" y="0.0" width="215" height="115"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0k-9U-Cmh">
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="57.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jF-rb-Baa">
+                                        <rect key="frame" x="0.0" y="57.5" width="215" height="57.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ROq-OI-jt6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="agx-A8-DC7"/>
+                    <constraint firstAttribute="bottom" secondItem="ROq-OI-jt6" secondAttribute="bottom" id="g6a-c9-Hk8"/>
+                    <constraint firstAttribute="trailing" secondItem="ROq-OI-jt6" secondAttribute="trailing" id="iJE-W8-JKo"/>
+                    <constraint firstItem="ROq-OI-jt6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jme-qu-620"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="133" y="97"/>
+            <connections>
+                <outlet property="imageFood" destination="fDH-wD-Mmc" id="6Zs-Cg-YwO"/>
+                <outlet property="subtitleLabel" destination="8jF-rb-Baa" id="v7X-EG-XaJ"/>
+                <outlet property="titleLabel" destination="i0k-9U-Cmh" id="7uH-QM-BAC"/>
+            </connections>
+            <point key="canvasLocation" x="160.86956521739131" y="120.20089285714285"/>
         </tableViewCell>
     </objects>
 </document>
