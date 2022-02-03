@@ -18,6 +18,7 @@ class DetailViewRouter {
     
     func createViewController() -> UIViewController {
         let view = DetailViewVC(nibName: "DetailViewVC", bundle: nil)
+        view.title = "Detalle"
         return view
     }
     
