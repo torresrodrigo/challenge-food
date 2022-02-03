@@ -15,13 +15,13 @@ class ListFoodVC: UIViewController {
     private var foods = [Food]()
     private var disposeBag = DisposeBag()
     
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var listFoodTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.bind(view: self, router: router)
         setupTableView()
-        getListFoods(search: "Bur")
-        
+        setupSearchBar()
     }
     
     func getListFoods(search: String) {
@@ -31,9 +31,10 @@ class ListFoodVC: UIViewController {
             .subscribe { foods in
                 self.foods = foods
                 self.reloadTableView()
-                print(self.foods)
+                print(foods.count)
             } onError: { error in
                 print(error.localizedDescription)
+                self.resetFoods()
             }.disposed(by: disposeBag)
     }
     
@@ -42,6 +43,11 @@ class ListFoodVC: UIViewController {
         DispatchQueue.main.async {
             self.listFoodTableView.reloadData()
         }
+    }
+    
+    func resetFoods() {
+        foods.removeAll()
+        reloadTableView()
     }
     
 
@@ -64,8 +70,25 @@ extension ListFoodVC: UITableViewDelegate, UITableViewDataSource {
         cell.setupCell(food: foods[indexPath.row])
         return cell
     }
-    
-    
-    
 
+}
+
+extension ListFoodVC: UISearchBarDelegate, UISearchDisplayDelegate {
+    
+    func setupSearchBar() {
+        searchBar.delegate = self
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            listFoodTableView.isHidden = true
+            resetFoods()
+        } else {
+            listFoodTableView.isHidden = false
+            getListFoods(search: searchText)
+        }
+    }
+    
+    
+    
 }
