@@ -72,7 +72,7 @@ extension ListFoodVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        viewModel.makeDetailView()
+        viewModel.makeDetailView(idFood: foods[indexPath.row].idMeal)
     }
 
 }

@@ -28,7 +28,7 @@ class ListFoodViewModel {
         return apiManager.getDataFromApi(query: search, endpointType: .listFood)
     }
     
-    func makeDetailView() {
-        router?.navigateToDetailView()
+    func makeDetailView(idFood: String) {
+        router?.navigateToDetailView(idFood: idFood)
     }
 }

@@ -27,8 +27,8 @@ class ListFoodRouter {
         self.sourceView = view
     }
     
-    func navigateToDetailView() {
-        let detailView = DetailViewRouter().viewController
+    func navigateToDetailView(idFood: String) {
+        let detailView = DetailViewRouter(idFood: idFood).viewController
         sourceView?.navigationController?.pushViewController(detailView, animated: true)
     }
     
