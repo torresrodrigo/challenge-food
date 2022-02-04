@@ -31,6 +31,8 @@
 		889AD06627ABDEAE006B6FB8 /* DetailViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AD06427ABDEAE006B6FB8 /* DetailViewVC.swift */; };
 		889AD06727ABDEAE006B6FB8 /* DetailViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 889AD06527ABDEAE006B6FB8 /* DetailViewVC.xib */; };
 		889AD06B27ABE5AD006B6FB8 /* DetailViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AD06A27ABE5AD006B6FB8 /* DetailViewRouter.swift */; };
+		889AD06E27AC8DCB006B6FB8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AD06D27AC8DCA006B6FB8 /* String+Extensions.swift */; };
+		889AD07127ACA47A006B6FB8 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AD07027ACA479006B6FB8 /* DetailViewModel.swift */; };
 		A407FC6A970C17FDBC8C736A /* Pods_challenge_foodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346116197FC9B4383B7B2A61 /* Pods_challenge_foodTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		889AD06427ABDEAE006B6FB8 /* DetailViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewVC.swift; sourceTree = "<group>"; };
 		889AD06527ABDEAE006B6FB8 /* DetailViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewVC.xib; sourceTree = "<group>"; };
 		889AD06A27ABE5AD006B6FB8 /* DetailViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewRouter.swift; sourceTree = "<group>"; };
+		889AD06D27AC8DCA006B6FB8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		889AD07027ACA479006B6FB8 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		92188A024A135C9DE2B05EFE /* Pods-challenge-food.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-food.release.xcconfig"; path = "Target Support Files/Pods-challenge-food/Pods-challenge-food.release.xcconfig"; sourceTree = "<group>"; };
 		AD3D9BE48B964F4E01F5D09E /* Pods-challenge-foodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-foodTests.debug.xcconfig"; path = "Target Support Files/Pods-challenge-foodTests/Pods-challenge-foodTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B7B69FAFDF877D451B30ED77 /* Pods-challenge-foodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-foodTests.release.xcconfig"; path = "Target Support Files/Pods-challenge-foodTests/Pods-challenge-foodTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 		88366DE527A89BCC004EE22C /* challenge-food */ = {
 			isa = PBXGroup;
 			children = (
+				889AD06C27AC8DA4006B6FB8 /* Extensions */,
 				8826AE2B27AA24F000215304 /* Helpers */,
 				8826AE2327AA102400215304 /* Network */,
 				88366E1627A89FF6004EE22C /* UseCases */,
@@ -264,6 +269,7 @@
 		889AD06227ABDE6D006B6FB8 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				889AD06F27ACA444006B6FB8 /* ViewModel */,
 				889AD06927ABE596006B6FB8 /* Router */,
 				889AD06827ABDEB4006B6FB8 /* Controller */,
 				889AD06327ABDE75006B6FB8 /* View */,
@@ -293,6 +299,22 @@
 				889AD06A27ABE5AD006B6FB8 /* DetailViewRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		889AD06C27AC8DA4006B6FB8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				889AD06D27AC8DCA006B6FB8 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		889AD06F27ACA444006B6FB8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				889AD07027ACA479006B6FB8 /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C0C92AF28F61C38B755576AC /* Frameworks */ = {
@@ -568,10 +590,12 @@
 				889AD06627ABDEAE006B6FB8 /* DetailViewVC.swift in Sources */,
 				88366E2A27A8AA25004EE22C /* ListFoodViewModel.swift in Sources */,
 				88366DEB27A89BCC004EE22C /* ViewController.swift in Sources */,
+				889AD06E27AC8DCB006B6FB8 /* String+Extensions.swift in Sources */,
 				8826AE2A27AA16CB00215304 /* Foods.swift in Sources */,
 				8826AE2827AA125600215304 /* Food.swift in Sources */,
 				88366E2227A8A346004EE22C /* ListFoodRouter.swift in Sources */,
 				88366DE727A89BCC004EE22C /* AppDelegate.swift in Sources */,
+				889AD07127ACA47A006B6FB8 /* DetailViewModel.swift in Sources */,
 				88366DE927A89BCC004EE22C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

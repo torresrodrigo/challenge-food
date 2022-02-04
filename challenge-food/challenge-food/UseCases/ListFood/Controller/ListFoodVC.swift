@@ -25,7 +25,7 @@ class ListFoodVC: UIViewController {
     }
     
     func getListFoods(search: String) {
-        viewModel.getListFoods(search: search)
+        viewModel.getListFoods(search: search.remplaceTextInQuery())
             .subscribe(on: MainScheduler.instance)
             .observe(on: MainScheduler.instance)
             .subscribe { foods in
@@ -72,7 +72,7 @@ extension ListFoodVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        viewModel.makeDetailView()
+        viewModel.makeDetailView(idFood: foods[indexPath.row].idMeal)
     }
 
 }

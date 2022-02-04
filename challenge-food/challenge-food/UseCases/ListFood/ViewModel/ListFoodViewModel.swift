@@ -25,10 +25,10 @@ class ListFoodViewModel {
     }
     
     func getListFoods(search: String) -> Observable<[Food]> {
-        return apiManager.getListFood(search: search)
+        return apiManager.getDataFromApi(query: search, endpointType: .listFood)
     }
     
-    func makeDetailView() {
-        router?.navigateToDetailView()
+    func makeDetailView(idFood: String) {
+        router?.navigateToDetailView(idFood: idFood)
     }
 }

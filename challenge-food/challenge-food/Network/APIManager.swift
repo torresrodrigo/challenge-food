@@ -9,13 +9,29 @@ import Foundation
 import RxSwift
 import Alamofire
 
+enum EndpointType {
+    case listFood
+    case detail
+}
+
 class APIManager {
     
-    func getListFood(search: String) -> Observable<[Food]> {
-        let url = Constants.URL.main+Constants.Endpoint.search+search
-        print(url)
+    func getUrl(endpointType: EndpointType) -> String {
+        
+        switch endpointType {
+        case .listFood:
+            return Constants.URL.main+Constants.Endpoint.search
+        case .detail:
+            return Constants.URL.main+Constants.Endpoint.detail
+        }
+        
+    }
+    
+    func getDataFromApi(query: String, endpointType: EndpointType) -> Observable<[Food]> {
+        let url = getUrl(endpointType: endpointType)
+        
         return Observable.create { observer in
-            let requestReference = AF.request(url).responseDecodable(of: Foods.self) { response in
+            let requestReference = AF.request(url+query).responseDecodable(of: Foods.self) { response in
                 switch response.result {
                 case .success(let data):
                     observer.onNext(data.meals)
@@ -26,8 +42,6 @@ class APIManager {
             return Disposables.create {
                 requestReference.cancel()
             }
-            
         }
     }
-    
 }
