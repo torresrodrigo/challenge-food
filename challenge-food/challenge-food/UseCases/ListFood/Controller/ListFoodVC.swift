@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import SDWebImage
 
 class ListFoodVC: UIViewController {
 
@@ -16,12 +17,15 @@ class ListFoodVC: UIViewController {
     private var disposeBag = DisposeBag()
     
     private var foods = [Food]()
-    private var ramdomMeal = [Food]()
+    private var randomMeal = [Food]()
     
     var timer = Timer()
+    var imageHelper = ImageURL()
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var listFoodTableView: UITableView!
+    @IBOutlet weak var randoMealLabel: UILabel!
+    @IBOutlet weak var randomMealImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.bind(view: self, router: router)
@@ -50,19 +54,28 @@ class ListFoodVC: UIViewController {
             .subscribe(on: MainScheduler.instance)
             .observe(on: MainScheduler.instance)
             .subscribe { ramdomMeal in
-                self.ramdomMeal = ramdomMeal
-                print(ramdomMeal[0])
+                self.randomMeal = ramdomMeal
+                self.setupRandomMeal()
             } onError: { error in
                 print(error.localizedDescription)
             }.disposed(by: disposeBag)
     }
     
     private func timerRandomMeal() {
-        self.timer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true, block: { _ in
+        self.timer = Timer.scheduledTimer(withTimeInterval: 30, repeats: true, block: { _ in
             self.getRandomMeal()
-            
-            })
+            DispatchQueue.main.async {
+                self.setupRandomMeal()
+            }
+        })
     }
+    
+    private func setupRandomMeal() {
+        randoMealLabel.text = randomMeal[0].strMeal
+        imageHelper.getImage(imageUrl: randomMeal[0].strMealThumb, imageView: randomMealImage)
+        
+    }
+
     
     private func reloadTableView() {
         DispatchQueue.main.async {
@@ -117,7 +130,5 @@ extension ListFoodVC: UISearchBarDelegate, UISearchDisplayDelegate {
             getListFoods(search: searchText)
         }
     }
-    
-    
     
 }

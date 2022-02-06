@@ -14,6 +14,7 @@ class FoodCell: UITableViewCell {
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var imageFood: UIImageView!
     
+    let imageHelper = ImageURL()
     
     static let identifier = String(describing: FoodCell.self)
     static func nib() -> UINib {
@@ -34,15 +35,8 @@ class FoodCell: UITableViewCell {
     func setupCell(food: Food) {
         titleLabel.text = food.strMeal
         subtitleLabel.text = food.strCategory
-        getImage(imageUrl: food.strMealThumb)
+        imageHelper.getImage(imageUrl: food.strMealThumb, imageView: imageFood  )
         
-    }
-    
-    private func getImage(imageUrl: String?) {
-        if let path = imageUrl {
-            let imageUrl = URL(string: path)
-            imageFood.sd_setImage(with: imageUrl)
-        }
     }
     
 }

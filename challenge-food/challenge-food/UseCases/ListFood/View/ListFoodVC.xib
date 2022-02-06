@@ -11,6 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListFoodVC" customModule="challenge_food" customModuleProvider="target">
             <connections>
                 <outlet property="listFoodTableView" destination="PAU-pk-dYb" id="nKs-mp-Mks"/>
+                <outlet property="randoMealLabel" destination="q47-wK-ewj" id="44b-Lt-eNw"/>
+                <outlet property="randomMealImage" destination="IQe-50-WHJ" id="fRB-TV-vs7"/>
                 <outlet property="searchBar" destination="rz6-lJ-XZ9" id="Bb2-lJ-Jdx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -37,10 +39,11 @@
                                 <constraint firstAttribute="width" secondItem="IQe-50-WHJ" secondAttribute="height" multiplier="1:1" id="qKH-cZ-Fn6"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q47-wK-ewj">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="q47-wK-ewj">
                             <rect key="frame" x="57.5" y="0.0" width="356.5" height="57.5"/>
+                            <color key="backgroundColor" systemColor="labelColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -69,6 +72,9 @@
         </view>
     </objects>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

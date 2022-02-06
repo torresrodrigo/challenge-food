@@ -27,6 +27,7 @@
 		88366E2627A8A6DB004EE22C /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88366E2427A8A6DB004EE22C /* FoodCell.swift */; };
 		88366E2727A8A6DB004EE22C /* FoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88366E2527A8A6DB004EE22C /* FoodCell.xib */; };
 		88366E2A27A8AA25004EE22C /* ListFoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88366E2927A8AA25004EE22C /* ListFoodViewModel.swift */; };
+		888250D127AF8FF1004F5EE3 /* ImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888250D027AF8FF1004F5EE3 /* ImageUrl.swift */; };
 		888950258CC40286D5D2AF5E /* Pods_challenge_food_challenge_foodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE0B0AAFD67FC0AA10DD91B /* Pods_challenge_food_challenge_foodUITests.framework */; };
 		889AD06627ABDEAE006B6FB8 /* DetailViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AD06427ABDEAE006B6FB8 /* DetailViewVC.swift */; };
 		889AD06727ABDEAE006B6FB8 /* DetailViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 889AD06527ABDEAE006B6FB8 /* DetailViewVC.xib */; };
@@ -83,6 +84,7 @@
 		88366E2427A8A6DB004EE22C /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		88366E2527A8A6DB004EE22C /* FoodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCell.xib; sourceTree = "<group>"; };
 		88366E2927A8AA25004EE22C /* ListFoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFoodViewModel.swift; sourceTree = "<group>"; };
+		888250D027AF8FF1004F5EE3 /* ImageUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrl.swift; sourceTree = "<group>"; };
 		889AD06427ABDEAE006B6FB8 /* DetailViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewVC.swift; sourceTree = "<group>"; };
 		889AD06527ABDEAE006B6FB8 /* DetailViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewVC.xib; sourceTree = "<group>"; };
 		889AD06A27ABE5AD006B6FB8 /* DetailViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewRouter.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				8826AE2C27AA253800215304 /* Constants.swift */,
+				888250D027AF8FF1004F5EE3 /* ImageUrl.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -600,6 +603,7 @@
 				88366E1D27A8A2CE004EE22C /* ListFoodVC.swift in Sources */,
 				8826AE2D27AA253800215304 /* Constants.swift in Sources */,
 				8826AE2527AA11D800215304 /* APIManager.swift in Sources */,
+				888250D127AF8FF1004F5EE3 /* ImageUrl.swift in Sources */,
 				889AD06B27ABE5AD006B6FB8 /* DetailViewRouter.swift in Sources */,
 				88366E2627A8A6DB004EE22C /* FoodCell.swift in Sources */,
 				889AD06627ABDEAE006B6FB8 /* DetailViewVC.swift in Sources */,
