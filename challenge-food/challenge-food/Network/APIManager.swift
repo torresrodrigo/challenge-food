@@ -30,7 +30,7 @@ class APIManager {
         
     }
     
-    func getDataFromApi(query: String, endpointType: EndpointType) -> Observable<[Food]> {
+    func getDataFromApi(query: String = "", endpointType: EndpointType) -> Observable<[Food]> {
         let url = getUrl(endpointType: endpointType)
         
         return Observable.create { observer in

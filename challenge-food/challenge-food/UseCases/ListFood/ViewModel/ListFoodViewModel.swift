@@ -28,6 +28,10 @@ class ListFoodViewModel {
         return apiManager.getDataFromApi(query: search, endpointType: .listFood)
     }
     
+    func getRandomMeal() -> Observable<[Food]> {
+        return apiManager.getDataFromApi(endpointType: .random)
+    }
+    
     func makeDetailView(idFood: String) {
         router?.navigateToDetailView(idFood: idFood)
     }

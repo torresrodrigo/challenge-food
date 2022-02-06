@@ -12,8 +12,13 @@ class ListFoodVC: UIViewController {
 
     private var router = ListFoodRouter()
     private var viewModel = ListFoodViewModel()
-    private var foods = [Food]()
+
     private var disposeBag = DisposeBag()
+    
+    private var foods = [Food]()
+    private var ramdomMeal = [Food]()
+    
+    var timer = Timer()
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var listFoodTableView: UITableView!
@@ -22,6 +27,8 @@ class ListFoodVC: UIViewController {
         viewModel.bind(view: self, router: router)
         setupTableView()
         setupSearchBar()
+        getRandomMeal()
+        timerRandomMeal()
     }
     
     func getListFoods(search: String) {
@@ -38,6 +45,24 @@ class ListFoodVC: UIViewController {
             }.disposed(by: disposeBag)
     }
     
+    func getRandomMeal() {
+        viewModel.getRandomMeal()
+            .subscribe(on: MainScheduler.instance)
+            .observe(on: MainScheduler.instance)
+            .subscribe { ramdomMeal in
+                self.ramdomMeal = ramdomMeal
+                print(ramdomMeal[0])
+            } onError: { error in
+                print(error.localizedDescription)
+            }.disposed(by: disposeBag)
+    }
+    
+    private func timerRandomMeal() {
+        self.timer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true, block: { _ in
+            self.getRandomMeal()
+            
+            })
+    }
     
     private func reloadTableView() {
         DispatchQueue.main.async {
@@ -49,8 +74,6 @@ class ListFoodVC: UIViewController {
         foods.removeAll()
         reloadTableView()
     }
-    
-    
     
 
 }
