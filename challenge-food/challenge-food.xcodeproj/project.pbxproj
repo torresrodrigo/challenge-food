@@ -33,6 +33,8 @@
 		889AD06B27ABE5AD006B6FB8 /* DetailViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AD06A27ABE5AD006B6FB8 /* DetailViewRouter.swift */; };
 		889AD06E27AC8DCB006B6FB8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AD06D27AC8DCA006B6FB8 /* String+Extensions.swift */; };
 		889AD07127ACA47A006B6FB8 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AD07027ACA479006B6FB8 /* DetailViewModel.swift */; };
+		88F3AE9A27AF4AAF0017E355 /* IngredientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3AE9827AF4AAF0017E355 /* IngredientsCell.swift */; };
+		88F3AE9B27AF4AAF0017E355 /* IngredientsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88F3AE9927AF4AAF0017E355 /* IngredientsCell.xib */; };
 		A407FC6A970C17FDBC8C736A /* Pods_challenge_foodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346116197FC9B4383B7B2A61 /* Pods_challenge_foodTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +88,8 @@
 		889AD06A27ABE5AD006B6FB8 /* DetailViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewRouter.swift; sourceTree = "<group>"; };
 		889AD06D27AC8DCA006B6FB8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		889AD07027ACA479006B6FB8 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		88F3AE9827AF4AAF0017E355 /* IngredientsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsCell.swift; sourceTree = "<group>"; };
+		88F3AE9927AF4AAF0017E355 /* IngredientsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientsCell.xib; sourceTree = "<group>"; };
 		92188A024A135C9DE2B05EFE /* Pods-challenge-food.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-food.release.xcconfig"; path = "Target Support Files/Pods-challenge-food/Pods-challenge-food.release.xcconfig"; sourceTree = "<group>"; };
 		AD3D9BE48B964F4E01F5D09E /* Pods-challenge-foodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-foodTests.debug.xcconfig"; path = "Target Support Files/Pods-challenge-foodTests/Pods-challenge-foodTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B7B69FAFDF877D451B30ED77 /* Pods-challenge-foodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-foodTests.release.xcconfig"; path = "Target Support Files/Pods-challenge-foodTests/Pods-challenge-foodTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -280,6 +284,7 @@
 		889AD06327ABDE75006B6FB8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				88F3AE9727AF49CF0017E355 /* Cell */,
 				889AD06527ABDEAE006B6FB8 /* DetailViewVC.xib */,
 			);
 			path = View;
@@ -315,6 +320,15 @@
 				889AD07027ACA479006B6FB8 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		88F3AE9727AF49CF0017E355 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				88F3AE9827AF4AAF0017E355 /* IngredientsCell.swift */,
+				88F3AE9927AF4AAF0017E355 /* IngredientsCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		C0C92AF28F61C38B755576AC /* Frameworks */ = {
@@ -452,6 +466,7 @@
 				889AD06727ABDEAE006B6FB8 /* DetailViewVC.xib in Resources */,
 				88366E1E27A8A2CE004EE22C /* ListFoodVC.xib in Resources */,
 				88366DF327A89BD2004EE22C /* LaunchScreen.storyboard in Resources */,
+				88F3AE9B27AF4AAF0017E355 /* IngredientsCell.xib in Resources */,
 				88366E2727A8A6DB004EE22C /* FoodCell.xib in Resources */,
 				88366DF027A89BD2004EE22C /* Assets.xcassets in Resources */,
 				88366DEE27A89BCC004EE22C /* Main.storyboard in Resources */,
@@ -594,6 +609,7 @@
 				8826AE2A27AA16CB00215304 /* Foods.swift in Sources */,
 				8826AE2827AA125600215304 /* Food.swift in Sources */,
 				88366E2227A8A346004EE22C /* ListFoodRouter.swift in Sources */,
+				88F3AE9A27AF4AAF0017E355 /* IngredientsCell.swift in Sources */,
 				88366DE727A89BCC004EE22C /* AppDelegate.swift in Sources */,
 				889AD07127ACA47A006B6FB8 /* DetailViewModel.swift in Sources */,
 				88366DE927A89BCC004EE22C /* SceneDelegate.swift in Sources */,
