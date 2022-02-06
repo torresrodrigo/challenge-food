@@ -23,8 +23,8 @@ class DetailViewVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        getDataDetail()
         setupTableView()
+        getDataDetail()
     }
     
     private func getDataDetail() {
@@ -35,10 +35,15 @@ class DetailViewVC: UIViewController {
             .subscribe { foods in
                 self.detailFood = foods
                 self.ingredientes = self.getIngredients(food: foods[0])
-                self.ingredientsTableView.reloadData()
+                self.setupUI(data: foods[0])
             } onError: { error in
                 print(error.localizedDescription)
             }.disposed(by: disposeBag)
+    }
+    
+    private func setupUI(data: Food) {
+        showDetail(data: data)
+        self.ingredientsTableView.reloadData()
     }
     
     private func showDetail(data: Food) {
