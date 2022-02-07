@@ -12,6 +12,7 @@ import Alamofire
 enum EndpointType {
     case listFood
     case detail
+    case random
 }
 
 class APIManager {
@@ -23,11 +24,13 @@ class APIManager {
             return Constants.URL.main+Constants.Endpoint.search
         case .detail:
             return Constants.URL.main+Constants.Endpoint.detail
+        case .random:
+            return Constants.URL.main+Constants.Endpoint.random
         }
         
     }
     
-    func getDataFromApi(query: String, endpointType: EndpointType) -> Observable<[Food]> {
+    func getDataFromApi(query: String = "", endpointType: EndpointType) -> Observable<[Food]> {
         let url = getUrl(endpointType: endpointType)
         
         return Observable.create { observer in

@@ -17,6 +17,7 @@ struct Constants {
     struct Endpoint {
         static let search = "search.php?s="
         static let detail = "lookup.php?i="
+        static let random = "random.php"
     }
     
 }
